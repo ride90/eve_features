@@ -14,6 +14,9 @@ I've created this repo as a playground and hope it'll be usefull for somebody wh
 - entities will emulate oneTOmany and manyTOmany relation (MongoDB will be used)
 - custom endpoints
 - blueprinting
+- custom fields
+- custom render
+- custom serializers
 
 ## Guide
 todo
