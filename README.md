@@ -2,7 +2,7 @@
 
 ## Python3 Eve app which covers basic features.
 In general I would like to cover some basic REST API needs.
-I've created this repo as a playground and hope it'll be usefull for somebody who are researching pyhton Eve.
+I've created this repo as a playground and hope it'll be usefull for somebody who are researching python Eve.
 
 ## Features
 - registration
@@ -13,6 +13,7 @@ I've created this repo as a playground and hope it'll be usefull for somebody wh
 - restricted role based authorization for some entities
 - entities will emulate oneTOmany and manyTOmany relation (MongoDB will be used)
 - custom endpoints
+- blueprinting
 
 ## Guide
 todo
