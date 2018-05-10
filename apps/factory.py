@@ -15,15 +15,15 @@ class BlogEve(eve.Eve):
 
 def _register_blueprints(app):
     """
-    Register blueprints and eve domains
-    :param app: app object
+    Register blueprints.
+    :param app: eve app object
     :return:
     """
     from .auth import blueprint as auth_blueprint
-    app.register_blueprint(auth_blueprint)
+    from .blog import blueprint as blog_blueprint
 
-    with app.app_context():
-        auth_blueprint.register_resources()
+    app.register_blueprint(auth_blueprint)
+    app.register_blueprint(blog_blueprint)
 
 
 def get_app(config=None):
@@ -31,16 +31,17 @@ def get_app(config=None):
         os.path.dirname(os.path.dirname(__file__))
     )
 
+    # flask config
     app_config = flask.Config(abs_path)
     app_config.from_object('settings.base')
 
     if config:
         app_config.update(config)
 
-    # create app
+    # create eve blog app instance
     app = BlogEve(settings=app_config)
 
-    # register blue prints and resources
+    # register blueprints with resources inside
     _register_blueprints(app)
 
     return app
