@@ -12,9 +12,20 @@ RESOURCES = {
             },
             'roles': {
                 'type': 'list',
-                'allowed': ['user', 'superuser', 'admin'],
+                'allowed': ['user', 'superuser'],
                 'required': True,
-            }
+            },
+            'location': {
+                'type': 'dict',
+                'schema': {
+                    'country': {'type': 'string'},
+                    'city': {'type': 'string'},
+                    'address': {'type': 'string'}
+                },
+            },
+            'born': {
+                'type': 'datetime',
+            },
         },
         # Disable endpoint caching.
         'cache_control': '',

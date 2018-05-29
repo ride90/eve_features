@@ -3,6 +3,7 @@ click==6.7
 Eve==0.8
 Events==0.3
 Flask==1.0.2
+Flask-WTF
 itsdangerous==0.24
 Jinja2==2.10
 MarkupSafe==1.0

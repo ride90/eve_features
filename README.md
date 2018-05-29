@@ -9,13 +9,12 @@ I've created this repo as a playground and hope it'll be usefull for somebody wh
 - token based authentication (JWT or Basic)
 - crud posts, categorize and tag them
 - search and filter
-- full text search?
+- custom filter
 - restricted role based authorization for some entities
 - entities will emulate oneTOmany and manyTOmany relation (MongoDB will be used)
 - custom endpoints
 - blueprinting
 - custom fields
-- custom render
 - custom serializers
 
 ## Guide
